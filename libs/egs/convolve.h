@@ -6,6 +6,10 @@
 #include <cmath>
 #include "image.h"
 
+#define __max max
+#define __min min
+
+
 /* convolve src with mask.  dst is flipped! */
 static void convolve_even(image11<float> *src, image11<float> *dst, 
 			  std::vector<float> &mask) {

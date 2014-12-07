@@ -28,6 +28,8 @@ void ofApp::update(){
 		segmentedImage.setFromPixels(segmentation.getSegmentedPixels());
 		segmentedImage.update();
 	}
+    
+    ofSetWindowTitle(ofToString(ofGetFrameRate()));
 }
 
 //-------------------------------------------------------------- draw();

@@ -124,7 +124,7 @@ int segment_image(image11<rgb> *im, float sigma, float c, int min_size,
       int comp = u->find(y * width + x);
 	  if(maskbits_index.find(comp) == maskbits_index.end()){
 		maskbits_index[comp] = maskbits_list.size();
-		maskbits_list.push_back( vector<pair<int,int>>() );
+		maskbits_list.push_back( vector<pair<int,int> >() );
 	  }
 	  maskbits_list[ maskbits_index[comp] ].push_back(make_pair(x,y));
     }
